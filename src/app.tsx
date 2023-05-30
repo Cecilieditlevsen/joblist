@@ -44,21 +44,12 @@ setup({
   },
 })
 
-// container should be removed before build
 function App() {
-  if (import.meta.env.DEV) {
-    return (
-      <>
-        <Container>
-          <JobList />
-        </Container>
-      </>
-    )
-  }
-
   return (
     <>
-      <JobList />
+      <Container>
+        <JobList />
+      </Container>
     </>
   )
 }
